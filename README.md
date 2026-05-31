@@ -1,4 +1,4 @@
-# ⌚ Timeless Aura — Watch E-Commerce Website
+# Timeless Aura — Watch E-Commerce Website
 
 <div align="center">
 
@@ -15,43 +15,43 @@
 
 ---
 
-## 🌟 Features
+## Features
 
-- 🏠 **Home Page** — Animated hero carousel with promotional banners, trending products, and deals section
-- 🛍️ **Products Page** — Full product listing with search, filter, and sort functionality
-- 🔍 **Product Detail Page** — Individual product view with add-to-cart and wishlist support
-- 📖 **Blog Page** — Watch-related blog articles and tips
-- 👥 **About Us Page** — Brand story and team information
-- 🛒 **Shopping Cart** — Add/remove items, quantity control, and total calculation
-- ❤️ **Wishlist** — Save favorite watches for later
-- 📩 **Contact / Newsletter** — Form with backend submission support
-- 📱 **Responsive Design** — Mobile-friendly layout across all devices
+- **Home Page** — Animated hero carousel with promotional banners, trending products, and deals section
+- **Products Page** — Full product listing with search, filter, and sort functionality
+- **Product Detail Page** — Individual product view with add-to-cart and wishlist support
+- **Blog Page** — Watch-related blog articles and tips
+- **About Us Page** — Brand story and team information
+- **Shopping Cart** — Add/remove items, quantity control, and total calculation
+- **Wishlist** — Save favorite watches for later
+- **Contact / Newsletter** — Form with backend submission support
+- **Responsive Design** — Mobile-friendly layout across all devices
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 Watch ecommerce/
-├── index.html          # Home page
-├── product.html        # Products listing page
+├── index.html   # Home page
+├── product.html  # Products listing page
 ├── product_detail.html # Single product detail page
-├── about_us.html       # About Us page
-├── blog.html           # Blog page
-├── style.css           # Global stylesheet
-├── script.js           # Product data & core JS logic
-├── cart.js             # Cart & wishlist functionality
-├── server.js           # Express backend server
-├── package.json        # Node.js dependencies
-├── messages.json       # Contact form submissions storage
-├── images/             # Product images
-├── Icons/              # Icon assets
-└── README.md           # Project documentation
+├── about_us.html  # About Us page
+├── blog.html   # Blog page
+├── style.css   # Global stylesheet
+├── script.js   # Product data & core JS logic
+├── cart.js    # Cart & wishlist functionality
+├── server.js   # Express backend server
+├── package.json  # Node.js dependencies
+├── messages.json  # Contact form submissions storage
+├── images/    # Product images
+├── Icons/    # Icon assets
+└── README.md   # Project documentation
 ```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -63,29 +63,29 @@ Make sure you have the following installed:
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/rojinarijal/Watch-E-commerce.git
-   cd Watch-E-commerce
-   ```
+ ```bash
+ git clone https://github.com/rojinarijal/Watch-E-commerce.git
+ cd Watch-E-commerce
+ ```
 
 2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+ ```bash
+ npm install
+ ```
 
 3. **Start the backend server**
-   ```bash
-   npm start
-   ```
+ ```bash
+ npm start
+ ```
 
 4. **Open the app in your browser**
-   ```
-   http://localhost:5001
-   ```
+ ```
+ http://localhost:5001
+ ```
 
 ---
 
-## 🖥️ Pages Overview
+## Pages Overview
 
 | Page | File | Description |
 |------|------|-------------|
@@ -97,7 +97,7 @@ Make sure you have the following installed:
 
 ---
 
-## 🔧 Backend API
+## Backend API
 
 The Express server (`server.js`) runs on **port 5001** and provides:
 
@@ -111,15 +111,15 @@ The Express server (`server.js`) runs on **port 5001** and provides:
 ```json
 POST /api/contact
 {
-  "name": "John Doe",
-  "email": "john@example.com",
-  "message": "I love your watches!"
+ "name": "John Doe",
+ "email": "john@example.com",
+ "message": "I love your watches!"
 }
 ```
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 | Technology | Usage |
 |------------|-------|
@@ -134,7 +134,7 @@ POST /api/contact
 
 ---
 
-## 🎨 Design Highlights
+## Design Highlights
 
 - **Dark-themed navbar** with brand colors (red & black)
 - **Swiper.js hero carousel** with auto-play and navigation
@@ -144,7 +144,7 @@ POST /api/contact
 
 ---
 
-## 🛒 Cart & Wishlist
+## Cart & Wishlist
 
 The cart and wishlist are implemented using `localStorage`, allowing persistence between page visits without requiring a database.
 
@@ -155,20 +155,20 @@ The cart and wishlist are implemented using `localStorage`, allowing persistence
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 ```json
 {
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
-  }
+ "dependencies": {
+ "cors": "^2.8.6",
+ "express": "^5.2.1"
+ }
 }
 ```
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! To contribute:
 
@@ -180,13 +180,13 @@ Contributions are welcome! To contribute:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **ISC License**.
 
 ---
 
-## 👤 Author
+## Author
 
 **Rojina Rijal**
 
@@ -195,6 +195,6 @@ This project is licensed under the **ISC License**.
 ---
 
 <div align="center">
-  <p>Made with ❤️ and ⌚ — <strong>Timeless Aura</strong></p>
-  <p>© 2024 timelessaura.com. All rights reserved.</p>
+ <p><strong>Timeless Aura</strong></p>
+ <p>© 2024 timelessaura.com. All rights reserved.</p>
 </div>
