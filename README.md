@@ -2,12 +2,12 @@
 
 <div align="center">
 
-![Timeless Aura](https://img.shields.io/badge/Timeless-Aura-red?style=for-the-badge&logo=appstore&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Timeless Aura](https://img.shields.io/badge/Timeless-Aura-black?style=for-the-badge&logo=appstore&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-black?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-black?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-black?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-black?style=for-the-badge&logo=express&logoColor=white)
 
 **A premium watch e-commerce platform built with HTML, CSS, JavaScript, and Node.js + Express backend.**
 
