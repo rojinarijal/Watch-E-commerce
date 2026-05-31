@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Watch Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=package_2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Orbitron:wght@400..900&family=Pavanam&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2, h3 {
+            color: #111;
+            text-align: center;
+        }
+
+        p {
+            margin: 0 0 1em;
+            text-align: center;
+        }
+
+        
+        .hero-section {
+            background: url(images/rol.jpg) no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #00BFA6;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+        }
+
+        
+        .header {
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .navbar {
+            width: 94%;
+            height: 80px;
+            padding: 0 3% 0 3%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar-box1 {
+            width: 31.67%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .navbar-box1:nth-child(2) {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-box1:nth-child(3) {
+            display: flex;
+            justify-content: right;
+        }
+
+        #search-input {
+            padding: 13.5px 5px 15px 15px;
+            width: 65%;
+            font-size: 15px;
+            border-radius: 40px 0 0 40px;
+            background-color: #e9e9e8;
+            outline: none;
+            border: none;
+        }
+
+        #search-btn {
+            width: 80px;
+            padding: 15px;
+            margin-left: -5px;
+            border: none;
+            border-radius: 0 40px 40px 0;
+            background-color: #00BFA6;
+            color: #fff;
+        }
+
+        .navbar2-main {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar2-main ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        .navbar2-main ul li {
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        
+        .content-section {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 10px;
+            margin: 2.5%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 92%;
+        }
+
+        .content-section:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .content-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .content-text {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .content-text h2 {
+            margin-bottom: 10px;
+            color: #00BFA6;
+        }
+
+        .content-image {
+            flex: 1;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-image img {
+            width: 350px;
+            height: 350px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .content-image img:hover {
+            transform: scale(1.1);
+        }
+
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        #contact-form div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #contact-form input, #contact-form textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        #contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        #submit-btn {
+            background-color: #00BFA6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        #submit-btn:hover {
+            background-color: #008f7b;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        .team-member {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; 
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member img:hover {
+            transform: scale(1.1); 
+        }
+
+        .team-member p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+
+        .dialog {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1000; 
+        }
+
+        .dialog-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            backdrop-filter: blur(8px); 
+            z-index: 999; 
+        }
+
+        #close-btn {
+            background-color: #00BFA6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #close-btn:hover {
+            background-color: #008f7b;
+        }
+
+        .team-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        }
+
+        .team-member {
+        text-align: center;
+        max-width: 200px;
+        }
+
+        .team-member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        }
+
+        .team-member p {
+        margin: 5px 0;
+        }
+
+        .social-links {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        }
+
+        .social-links a img {
+        width: 20px;
+        height: 20px; 
+        transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover img {
+        transform: scale(1.2); 
+        }
+
+
+
+
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header-box1">
+                <p style="margin-left: 40px;">Free shipping for over Rs 10000</p>
+            </div>
+        </div>
+    </header>
+
+    <navbar>
+        <div class="navbar">
+            <div class="navbar-box1">
+                <div class="navbar-box1-1">
+                    <input type="text" name="" id="search-input" placeholder="Search">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-box1">
+                <h1><span style="color: red;">TIMELESS </span>AURA</h1>
+
+            </div>
+
+            <div class="navbar-box1">
+                <div class="login-img"></div>
+                <p>Log In</p>
+                <i class="fa-regular fa-heart" id="wishlist-btn"></i>
+                <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+            </div>
+        </div>
+    </navbar>
+
+    <navbar2>
+        <div class="navbar2-main">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li style="margin-right: 30px;"><a href="blog.html">BLOG</a></li>
+            </ul>
+        </div>
+    </navbar2>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Our Legacy of Timeless Craftsmanship</h1>
+            <p>Blending precision and elegance since 1980.</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="content-text">
+            <h2>Our Journey</h2>
+            <p>
+                Established in 1980, we have built a reputation as a trusted supplier of premium watches to retailers worldwide. 
+                From partnering with renowned manufacturers to curating a diverse portfolio of timepieces, 
+                our focus has always been on delivering quality and style to our clients.
+            </p>
+        </div>
+        <div class="content-image">
+            <img src="images/make.jpg" alt="Our journey">
+        </div>
+    </section>
+    
+    <section class="content-section">
+        <div class="content-text">
+            <h2>Our Mission and Values</h2>
+            <p>
+                We believe that every watch tells a story, and our mission is to ensure those stories reach customers through our reliable supply chain. 
+                With values rooted in integrity, efficiency, and customer satisfaction, 
+                we are committed to providing retailers with the finest selection of timepieces at competitive prices.
+            </p>
+        </div>
+        <div class="content-image">
+            <img src="images/mission.jpg" alt="Our mission and values">
+        </div>
+    </section>
+    
+    <section class="content-section">
+        <div class="content-text">
+            <h2>Our Partnerships</h2>
+            <p>
+                Over the years, we have forged strong relationships with top watch manufacturers, enabling us to offer a wide range of styles, 
+                from classic designs to modern innovations. Our extensive network ensures that retailers have access to the latest trends and 
+                timeless pieces to meet their customers' needs.
+            </p>
+        </div>
+        <div class="content-image">
+            <img src="images/shake.jpg" alt="Our partnerships">
+        </div>
+    </section>
+    
+
+    <h2 id="h">Contact Us</h2>
+    <p>Looking to stock your store with the finest watches? Enter your details and message below, <br>and we’ll help you find the perfect collection for your customers.</p>
+    
+    <section class="content-section">
+        <div class="content-text">
+            
+            <form id="contact-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class="content-image">
+            <img src="images/c.jpg" alt="Contact Us">
+        </div>
+    </section>
+    
+    <div id="dialog-overlay" class="dialog-background"></div>
+    <div id="dialog-box" class="dialog" style="padding: 30px; max-width: 400px; border: none; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+        <i class="fa-regular fa-paper-plane" style="font-size: 40px; color: #00BFA6; margin-bottom: 15px;"></i>
+        <h2 style="font-size: 20px; margin-bottom: 10px; text-align: center;">Message Status</h2>
+        <p id="dialog-message" style="font-size: 15px; color: #555; text-align: center; margin-bottom: 20px;"></p>
+        <center><button id="close-btn" class="btn" style="padding: 10px 25px; margin-top: 10px;">Close</button></center>
+    </div>    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online shop</h4>
+                    <ul>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <div class="line"><p>© 2024timelessaura.com, Inc. All rights reserved.</p></div>
+
+</body>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        const dialogBox = document.getElementById('dialog-box');
+        const dialogMessage = document.getElementById('dialog-message');
+        const dialogOverlay = document.getElementById('dialog-overlay');
+
+        if (name && email && message) {
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name, email, message })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    dialogMessage.innerText = data.message;
+                    document.getElementById('contact-form').reset();
+                } else {
+                    dialogMessage.innerText = data.error || 'Something went wrong. Please try again.';
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                dialogMessage.innerText = 'Failed to connect to the server. Please try again later.';
+            }
+        } else {
+            dialogMessage.innerText = "Please fill out all fields.";
+        }
+
+        dialogBox.style.display = 'block';
+        dialogOverlay.classList.add('active');
+    });
+
+    document.getElementById('close-btn').addEventListener('click', function() {
+        document.getElementById('dialog-box').style.display = 'none';
+        document.getElementById('dialog-overlay').classList.remove('active');
+    });
+</script>
+
+<script type="module" src="cart.js"></script>
+
+</body>
+</html>

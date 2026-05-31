@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=package_2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Orbitron:wght@400..900&family=Pavanam&display=swap" rel="stylesheet">
+
+<style>
+    
+    .product-details {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .img-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .price {
+      margin-top: 20px;
+    }
+    .price strong {
+      font-size: 18px;
+    }
+    .original-price {
+      text-decoration: line-through;
+      color: #999;
+    }
+
+    .details-main{
+        width: 93%;
+        height: 600px;
+        margin: 2.5%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        gap: 20px;
+    }
+
+    .img-part{
+        height: 500px;
+        width: 30%;
+        background-color: #2D5986;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .img-part img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+    }
+
+    .description-part{
+        width: 50%;
+        padding: 30px;
+        height: 440px;
+        
+    }
+
+    /* From Uiverse.io by cssbuttons-io */ 
+        .btnn {
+        align-items: center;
+        background-image: linear-gradient(144deg, #00BFA6, #5b42f3 50%, #00ddeb);
+        border: 0;
+        border-radius: 8px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+        padding: 3px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s;
+        }
+
+        .btnn:active,
+        button:hover {
+        outline: 0;
+        }
+
+        .btnn span {
+        background-color: rgb(5, 6, 45);
+        padding: 16px 24px;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        transition: 300ms;
+        }
+
+        .btnn:hover span {
+        background: none;
+        }
+
+        .btnn:active {
+        transform: scale(0.9);
+        }
+
+        
+
+        p{
+            margin-top: 10px;
+            font-size: 20px;
+
+        }
+
+        hr{
+            margin: 20px 0px;
+        }
+
+        h1{
+            color: #00BFA6;
+        }
+
+        #go-back{
+            padding: 10px 34px;
+            color: black;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        
+  </style>
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header-box1">
+                <p style="margin-left: 40px;">Free shipping for over Rs 10000</p>
+            </div>
+            <div class="header-box2">
+                
+            </div>
+        </div>
+    </header>
+
+    <navbar>
+        <div class="navbar">
+            <div class="navbar-box1">
+                <div class="navbar-box1-1">
+                    <input type="text" name="" id="search-input" placeholder="Search">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-box1">   
+                <h1><span style="color: red;">TIMELESS </span>AURA</h1>
+
+            </div>
+
+            <div class="navbar-box1">
+                <div class="login-img"></div>
+                <p>Log In</p>
+                <i class="fa-regular fa-heart" id="wishlist-btn"></i>
+                <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+            </div>
+            
+        </div>
+    </navbar>
+
+    <navbar2>
+        <div class="navbar2-main">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li style="margin-right: 30px;"><a href="blog.html">BLOG</a></li>
+            </ul>
+        </div>
+    </navbar2>
+
+    
+    <div class="details-main">
+        
+    </div>
+
+  <div class="product-details"></div>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="line"><p>© 2024timelessaura.com, Inc. All rights reserved.</p></div>
+
+
+<script type="module">
+    import products from './script.js';
+    import { addToCart } from './cart.js';
+  
+    const productDetailsDiv = document.querySelector('.details-main');
+  
+    const params = new URLSearchParams(window.location.search);
+    const productId = parseInt(params.get('id'), 10);
+  
+    const product = products.find(p => p.id === productId);
+  
+    if (product) {
+      const displayPrice = product.discounted 
+        ? `<strong style="font-size: 24px; color: #00BFA6;">Rs. ${product.discountedPrice}</strong> 
+           <strong id="discountt" style="font-size: 18px; margin-left: 10px;">Rs. ${product.originalPrice}</strong>`
+        : `<strong style="font-size: 24px; color: #00BFA6;">Rs. ${product.originalPrice}</strong>`;
+
+      productDetailsDiv.innerHTML = `
+        <div class="img-part">
+            <img src="${product.image}" alt="${product.name}">
+        </div>
+        <div class="description-part">
+            <h1>${product.name}</h1>
+            <p>${displayPrice}</p>
+            <p style="margin-top: 15px; font-weight: 500; font-size: 16px; color: #666; text-align: left;">
+              Experience the pinnacle of fine watchmaking. This exquisite timepiece blends timeless precision, an elegant structural profile, and exceptional durability, making it the perfect addition to any gentleman's style repertoire.
+            </p>
+            <hr>
+            <div class="cart" style="display: flex; gap: 15px; align-items: center; margin-top: 20px;">
+                <button class="btnn" id="add-to-cart-btn" style="flex: 1;">
+                    <span class="text">Add To Cart</span>
+                </button>
+                <button id="go-back" class="btn" style="padding: 14px 30px; font-size: 16px; margin-top: 0px;">Go Back</button>
+            </div>
+        </div>
+      `;
+  
+      document.getElementById('add-to-cart-btn').addEventListener('click', () => {
+        addToCart(product.id, 1);
+      });
+
+      const goBackButton = document.getElementById('go-back');
+      goBackButton.addEventListener('click', () => {
+        history.back();
+      });
+    } else {
+      productDetailsDiv.innerHTML = `<p>Product not found.</p>`;
+    }
+  </script>
+  
+  <script type="module" src="cart.js"></script>
+  
+</body>
+</html>

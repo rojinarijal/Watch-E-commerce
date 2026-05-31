@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=package_2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Orbitron:wght@400..900&family=Pavanam&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header-box1">
+                <p style="margin-left: 40px;">Free shipping for over Rs 10000</p>
+            </div>
+            <div class="header-box2">
+                
+            </div>
+        </div>
+    </header>
+
+    <navbar>
+        <div class="navbar">
+            <div class="navbar-box1">
+                <div class="navbar-box1-1">
+                    <input type="text" name="" id="search-input" placeholder="Search">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-box1">
+                <h1><span style="color: red;">TIMELESS </span>AURA</h1>
+
+            </div>
+
+            <div class="navbar-box1">
+                <div class="login-img"></div>
+                <p>Log In</p>
+                <i class="fa-regular fa-heart" id="wishlist-btn"></i>
+                <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+            </div>
+            
+        </div>
+    </navbar>
+
+    <navbar2>
+        <div class="navbar2-main">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li style="margin-right: 30px;"><a href="blog.html">BLOG</a></li>
+            </ul>
+        </div>
+    </navbar2>
+
+    <bestsel>
+        <div class="sells-main">
+            <h1 style="margin-top: 2.5%;" id="h">Our Products</h1>
+            <div class="sells-box1">
+
+                
+            </div>
+            <button class="btn"><a href="#" style="color: #fff;">More Products Coming Soon...</a></button>
+        </div>
+    </bestsel>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+   <div class="line"><p>© 2024timelessaura.com, Inc. All rights reserved.</p></div>
+
+
+   <script type="module">
+    import products from './script.js';
+
+    const sellsBox = document.querySelector('.sells-box1');
+    const pageHeading = document.getElementById('h');
+
+    const params = new URLSearchParams(window.location.search);
+    const searchQuery = params.get('search') ? params.get('search').trim() : '';
+
+    let displayProducts = products;
+
+    if (searchQuery) {
+      displayProducts = products.filter(product => 
+        product.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      if (pageHeading) {
+        pageHeading.innerHTML = `Search Results for <span style="color: #333;">"${searchQuery}"</span>`;
+      }
+    }
+
+    if (displayProducts.length === 0) {
+      sellsBox.innerHTML = `
+        <div class="no-products-found" style="grid-column: 1/-1; width: 100%;">
+          <h2>No timepieces match your search.</h2>
+          <p style="margin-top: 10px; font-size: 16px; color: #666;">Explore our entire curated collection below instead!</p>
+        </div>
+      `;
+      products.forEach(product => renderProduct(product, sellsBox));
+    } else {
+      displayProducts.forEach(product => renderProduct(product, sellsBox));
+    }
+
+    function renderProduct(product, container) {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.setAttribute('data-id', product.id);
+
+      productDiv.innerHTML = `
+        <div class="img-box">
+          <img src="${product.image}" alt="${product.name}">
+        </div>
+        <p id="product-info">${product.name}</p>
+        ${product.discounted ? `
+          <strong id="discountt">Rs. ${product.discountedPrice}</strong>
+          <strong>Rs. ${product.originalPrice}</strong>
+        ` : `
+          <strong>Rs. ${product.originalPrice}</strong>
+        `}
+      `;
+
+      productDiv.addEventListener('click', () => {
+        window.location.href = `product_detail.html?id=${product.id}`;
+      });
+
+      container.appendChild(productDiv);
+    }
+  </script>
+
+  <script type="module" src="cart.js"></script>
+</body>
+</html>
